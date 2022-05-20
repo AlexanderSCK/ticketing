@@ -31,7 +31,7 @@ afterAll(async () => {
 
 global.signin = async () => {
     const email = 'test@test.com';
-    const password = 'password';
+    const password = 'test123';
   
     const response = await request(app)
       .post('/api/users/signup')

@@ -6,7 +6,7 @@ it('returns a 201 on successful signup', async () => {
     .post('/api/users/signup')
     .send({
       email: 'test@test.com',
-      password: 'password'
+      password: 'test123'
     })
     .expect(201);
 });
@@ -16,7 +16,7 @@ it('returns a 400 with an invalid email', async () => {
     .post('/api/users/signup')
     .send({
       email: 'alskdflaskjfd',
-      password: 'password'
+      password: 'test123'
     })
     .expect(400);
 });
@@ -52,7 +52,7 @@ it('disallows duplicate emails', async () => {
     .post('/api/users/signup')
     .send({
       email: 'test@test.com',
-      password: 'password'
+      password: 'test123'
     })
     .expect(201);
 
@@ -60,7 +60,7 @@ it('disallows duplicate emails', async () => {
     .post('/api/users/signup')
     .send({
       email: 'test@test.com',
-      password: 'password'
+      password: 'test123'
     })
     .expect(400);
 });
@@ -70,7 +70,7 @@ it('sets a cookie after successful signup', async () => {
     .post('/api/users/signup')
     .send({
       email: 'test@test.com',
-      password: 'password'
+      password: 'test123'
     })
     .expect(201);
 
