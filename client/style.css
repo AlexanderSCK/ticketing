@@ -1,12 +1,12 @@
 .list-group{
     line-height: 180%;
     text-align: center;
-    width: 70%;
+    width: 60%;
 }
 
 .list-group{
     margin: 10%;
-    background-color: aqua;
+    background-color: rgb(119, 221, 221);
 }
 
 .mb-3{
